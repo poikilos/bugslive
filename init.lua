@@ -3,7 +3,7 @@ dofile(minetest.get_modpath("buglive").."/api.lua")
 minetest.register_craftitem("buglive:boxbug", {
 	description = "Boxbug",
 	inventory_image = "inv_vitr.png",
-	
+
 	on_place = function(itemstack, placer, pointed_thing)
 		if pointed_thing.above then
 			minetest.env:add_entity(pointed_thing.above, "buglive:boxbug")
@@ -13,7 +13,7 @@ minetest.register_craftitem("buglive:boxbug", {
 	end,
 })
 minetest.register_node('buglive:boxbug', {
-	
+
 	drawtype = 'plantlike',
 	waving = 0,
 	tile_images = { 'vitr.png' },
@@ -58,7 +58,7 @@ buglive:register_mob("buglive:bug", {
 	hp_max = 1,
 	collisionbox = {-0.2, -0.01, -0.2, 0.2, 0.2, 0.2},
 	visual = "mesh",
-	mesh = "bug.x",
+	mesh = "bug.b3d",
 	textures = {"bug1.png"},
 	makes_footstep_sound = false,
 	walk_velocity = 1,
@@ -68,7 +68,7 @@ buglive:register_mob("buglive:bug", {
 	water_damage = 2,
 	lava_damage = 1,
 	light_damage = 0,
-	
+
 	on_rightclick = function(self, clicker)
 		if clicker:is_player() and clicker:get_inventory() then
 			clicker:get_inventory():add_item("main", "buglive:bug")
@@ -95,7 +95,7 @@ buglive:register_mob("buglive:bug2", {
 	hp_max = 1,
 	collisionbox = {-0.2, -0.01, -0.2, 0.2, 0.2, 0.2},
 	visual = "mesh",
-	mesh = "bug.x",
+	mesh = "bug.b3d",
 	textures = {"bug2.png"},
 	makes_footstep_sound = false,
 	walk_velocity = 1,
@@ -105,7 +105,7 @@ buglive:register_mob("buglive:bug2", {
 	water_damage = 2,
 	lava_damage = 1,
 	light_damage = 0,
-	
+
 	on_rightclick = function(self, clicker)
 		if clicker:is_player() and clicker:get_inventory() then
 			clicker:get_inventory():add_item("main", "buglive:bug2")
@@ -120,7 +120,7 @@ buglive:register_mob("buglive:bug3", {
 	hp_max = 1,
 	collisionbox = {-0.2, -0.01, -0.2, 0.2, 0.2, 0.2},
 	visual = "mesh",
-	mesh = "bug.x",
+	mesh = "bug.b3d",
 	textures = {"bug3.png"},
 	makes_footstep_sound = false,
 	walk_velocity = 1,
@@ -130,7 +130,7 @@ buglive:register_mob("buglive:bug3", {
 	water_damage = 2,
 	lava_damage = 1,
 	light_damage = 0,
-	
+
 	on_rightclick = function(self, clicker)
 		if clicker:is_player() and clicker:get_inventory() then
 			clicker:get_inventory():add_item("main", "buglive:bug3")
@@ -157,7 +157,7 @@ buglive:register_mob("buglive:bug4", {
 	hp_max = 1,
 	collisionbox = {-0.2, -0.01, -0.2, 0.2, 0.2, 0.2},
 	visual = "mesh",
-	mesh = "bug.x",
+	mesh = "bug.b3d",
 	textures = {"bug4.png"},
 	makes_footstep_sound = false,
 	walk_velocity = 1,
@@ -167,7 +167,7 @@ buglive:register_mob("buglive:bug4", {
 	water_damage = 2,
 	lava_damage = 1,
 	light_damage = 0,
-	
+
 	on_rightclick = function(self, clicker)
 		if clicker:is_player() and clicker:get_inventory() then
 			clicker:get_inventory():add_item("main", "buglive:bug4")
@@ -194,7 +194,7 @@ buglive:register_mob("buglive:bug5", {
 	hp_max = 1,
 	collisionbox = {-0.2, -0.01, -0.2, 0.2, 0.2, 0.2},
 	visual = "mesh",
-	mesh = "bug.x",
+	mesh = "bug.b3d",
 	textures = {"bug5.png"},
 	makes_footstep_sound = false,
 	walk_velocity = 1,
@@ -204,7 +204,7 @@ buglive:register_mob("buglive:bug5", {
 	water_damage = 2,
 	lava_damage = 1,
 	light_damage = 0,
-	
+
 	on_rightclick = function(self, clicker)
 		if clicker:is_player() and clicker:get_inventory() then
 			clicker:get_inventory():add_item("main", "buglive:bug5")
@@ -231,7 +231,7 @@ buglive:register_mob("buglive:bug6", {
 	hp_max = 1,
 	collisionbox = {-0.2, -0.01, -0.2, 0.2, 0.2, 0.2},
 	visual = "mesh",
-	mesh = "bug.x",
+	mesh = "bug.b3d",
 	textures = {"bug6.png"},
 	makes_footstep_sound = false,
 	walk_velocity = 1,
@@ -241,7 +241,7 @@ buglive:register_mob("buglive:bug6", {
 	water_damage = 2,
 	lava_damage = 1,
 	light_damage = 0,
-	
+
 	on_rightclick = function(self, clicker)
 		if clicker:is_player() and clicker:get_inventory() then
 			clicker:get_inventory():add_item("main", "buglive:bug")
@@ -268,7 +268,7 @@ buglive:register_mob("buglive:bug7", {
 	hp_max = 1,
 	collisionbox = {-0.2, -0.01, -0.2, 0.2, 0.2, 0.2},
 	visual = "mesh",
-	mesh = "bug.x",
+	mesh = "bug.b3d",
 	textures = {"bug7.png"},
 	makes_footstep_sound = false,
 	walk_velocity = 1,
@@ -278,7 +278,7 @@ buglive:register_mob("buglive:bug7", {
 	water_damage = 2,
 	lava_damage = 1,
 	light_damage = 0,
-	
+
 	on_rightclick = function(self, clicker)
 		if clicker:is_player() and clicker:get_inventory() then
 			clicker:get_inventory():add_item("main", "buglive:bug7")
@@ -305,7 +305,7 @@ buglive:register_mob("buglive:bug8", {
 	hp_max = 1,
 	collisionbox = {-0.2, -0.01, -0.2, 0.2, 0.2, 0.2},
 	visual = "mesh",
-	mesh = "bug.x",
+	mesh = "bug.b3d",
 	textures = {"bug8.png"},
 	makes_footstep_sound = false,
 	walk_velocity = 1,
@@ -315,7 +315,7 @@ buglive:register_mob("buglive:bug8", {
 	water_damage = 2,
 	lava_damage = 1,
 	light_damage = 0,
-	
+
 	on_rightclick = function(self, clicker)
 		if clicker:is_player() and clicker:get_inventory() then
 			clicker:get_inventory():add_item("main", "buglive:bug8")
@@ -342,7 +342,7 @@ buglive:register_mob("buglive:bug9", {
 	hp_max = 1,
 	collisionbox = {-0.2, -0.01, -0.2, 0.2, 0.2, 0.2},
 	visual = "mesh",
-	mesh = "bug.x",
+	mesh = "bug.b3d",
 	textures = {"bug9.png"},
 	makes_footstep_sound = false,
 	walk_velocity = 1,
@@ -352,7 +352,7 @@ buglive:register_mob("buglive:bug9", {
 	water_damage = 2,
 	lava_damage = 1,
 	light_damage = 0,
-	
+
 	on_rightclick = function(self, clicker)
 		if clicker:is_player() and clicker:get_inventory() then
 			clicker:get_inventory():add_item("main", "buglive:bug9")
