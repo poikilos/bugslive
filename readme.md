@@ -7,6 +7,11 @@ Fri Mar 20, 2015 15:04).
 
 ## Differences in Poikilos fork
 - The model is a b3d file instead of x.
+- There is a blend file in the src directory, created by importing an
+  obj+mtl exported from the x file using
+  [poikilos/b3view](https://github.com/poikilos/b3view) (this only
+  exports on frame of an animated file, which is fine for the bug since
+  it has no animation).
 - There are separate readme.md and license.txt files with corrections.
 
 
