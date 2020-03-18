@@ -8,7 +8,7 @@ mobs:register_mob("bugslive:bug", {
 	hp_min = 1, hp_max = 1, armor = 200,
 	collisionbox = {-0.2, -0.01, -0.2, 0.2, 0.2, 0.2},
 	visual = "mesh",
-	mesh = "bug.x",
+	mesh = "bug.b3d",
 	textures = {
 		{"bug1.png"},
 		{"bug2.png"},
